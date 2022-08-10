@@ -1,14 +1,16 @@
 :root {
   --bgcolor: #fff;
+  --secondle-text-color: #ffffff;
   --accent-color: #2196f3;
   --title-text-color: #212121;
   --ptimery-text-color: #757575;
   --logo-text-color: #000000;
-  --secondle-text-color: #ffffff;
   --hero-bg-color: #2f303a;
   --secondle-bg-color: #f5f4fa;
+  --button-bg-color: #f5f4fa;
 }
 
+/* global */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--ptimery-text-color);
@@ -19,7 +21,8 @@ body {
 }
 
 a,
-a:visited {
+a:visited,
+a:focus {
   text-decoration: none;
   color: inherit;
 }
@@ -54,6 +57,8 @@ ul {
 
 .nav-pages a:hover,
 .contacts a:hover,
+.nav-pages a:focus,
+.contacts a:focus,
 .mail,
 .logo span,
 .nav-pages .active {
@@ -83,6 +88,7 @@ ul {
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondle-text-color);
+  background-color: var(--accent-color);
 }
 /* features */
 
@@ -138,7 +144,11 @@ h2 {
   color: var(--secondle-text-color);
 }
 
+address a:hover {
+  color: var(--secondle-text-color);
+}
 /* portfolio */
+
 button {
   font-weight: 500;
   font-size: 16px;
@@ -147,9 +157,10 @@ button {
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--title-text-color);
-  background-color: #f5f4fa;
-  border: 1px solid #f5f4fa;
+  background-color: var(--button-bg-color);
+  border: var(--button-bg-color);
 }
+
 button:hover,
 li.active button {
   cursor: pointer;
