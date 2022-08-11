@@ -1,6 +1,7 @@
 :root {
   --bgcolor: #fff;
   --secondle-text-color: #ffffff;
+  --secondle-contact-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --title-text-color: #212121;
   --ptimery-text-color: #757575;
@@ -148,9 +149,10 @@ footer {
 
 address {
   font-style: normal;
+  color: var(--secondle-contact-color);
 }
 
-.adress .adress-part {
+address .adress-part {
   color: var(--secondle-text-color);
 }
 
